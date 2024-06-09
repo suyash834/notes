@@ -9,23 +9,23 @@
     "action": {
       "default_title": "Note",
       "default_popup": "popup.html",
-      "javascript": ["Scripts/popup.js","Scripts/HandDrawing.js"],
+      "javascript": ["popup.js","HandDrawing.js"],
       "FullscreenContentSetting" : "allow"
     },
   
     "content_scripts": [
       {
         "matches": ["http://*/*", "https://*/*"],
-        "css": ["CSS/content.css"],
-        "js": ["Scripts/content.js","Scripts/Background.js","Scripts/jquery-1.9.0.min.js"]
+        "css": ["content.css"],
+        "js": ["content.js","Background.js","jquery-1.9.0.min.js"]
       }
     ],
   
     "icons": {
-      "16": "IMG/icon.png",
-      "24": "IMG/icon.png",
-      "32": "IMG/icon.png",
-      "128": "IMG/icon.png"
+      "16": "icon.png",
+      "24": "icon.png",
+      "32": "icon.png",
+      "128": "icon.png"
     }
   }
   
