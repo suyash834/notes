@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Note</title>
+    <link rel="stylesheet" type="text/css" href="CSS/popup.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- ===== Home Section ===== -->
+    <div id="home-section">
+
+        <div class="header">
+            <h2 class="title">Your Notes</h2>
+            <div class="header-right">
+                <label class="switch" title="on/off">
+                    <input id="main-switch" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <button id="open-setting" title="Info and More">
+                    <i class="fa-sharp fa-solid fa-gear"></i>
+                </button>
+            </div>
+
+        </div>
+        <div id="empty-list-message" style="display: none;">
+            Nothing to show! Add new notes
+        </div>
+
+
+        <div id="container">
+            <div class="menuItem" id="sketch" title="FreeHand Drawing anywhere on the webpage">Annotation</div>
+            <!-- Notes will appear here -->
+            <div id="note-list">
+            </div>
+
+            <div class="footer">
+                <div class="footer-text">NoteSnap</div>
+
+                <div class="buttons">
+                    <button type="button" id="delete-all-notes" class="btn" title="Delete All">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                    <button type="button" id="download-notes-csv" class="btn" title="Download (CSV)">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </button>
+                    <button type="button" id="download-notes-text" class="btn" title="Download (Text)">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== setting Section ===== -->
+    <div id="setting-section" style="display: none;">
+        <div class="header">
+            <h1 class="title">Setting</h1>
+            <button id="close-setting">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="settings">
+            <div class="options">
+                <p class="footer-text">Highlighter (Beta)</p>
+                <label class="switch" title="on/off">
+                    <input id="highlighter" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <!-- <hr> -->
+            <div class="options">
+                <p class="footer-text">Clear All Data</p>
+                <div class="buttons">
+                    <button type="button" id="clear-all-data" class="btn" title="Clear All Data">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- <hr> -->
+            <div class="options">
+                <p class="footer-text">Download All Data</p>
+                <div class="buttons">
+                    <button type="button" id="download-all-notes-csv" class="btn" title="Download All Notes (CSV)">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </button>
+                    <button type="button" id="download-all-notes-text" class="btn" title="Download All Notes (Text)">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1 class="title">About</h1>
+        </div>
+        <div class="container">
+            <p class="info">It is a Chrome Extension for taking note of important details on any website. You can
+                quickly highlight and save any text with just one click.
+                With Note, you'll never lose important information again.
+            </p>
+
+            <!-- Creater Name  -->
+            <!-- <div class="createrBox">
+                <h2 class="title">Created By: </h2>
+                <p>Raj Patel</p>
+            </div>
+            <hr> -->
+        </div>
+
+    </div>
+    <script src="Scripts/popup.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="scripts/Background.js"></script>
+<script src="scripts/HandDrawing.js"></script>
+
+
+</body>
+
+
+
+</html>
